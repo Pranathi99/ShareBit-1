@@ -9,6 +9,7 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+<<<<<<< HEAD
 
     <string-array name="home_options">
         <item>Canteen</item>
@@ -16,4 +17,8 @@
         <item>Events</item>
         <item>Cleaning / Repairs</item>
     </string-array>
+||||||| f6f4f79
+=======
+    <string name="registration_success">1</string>
+>>>>>>> c5f7d85e5ae475478a7a3807d3222128b7302bf2
 </resources>

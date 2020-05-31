@@ -1,0 +1,219 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/EditText">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/design_default_color_background">
+
+            <Button
+                android:id="@+id/create"
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/password1"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:text="Create Account"
+                android:textAllCaps="false"
+                android:textColor="@color/design_default_color_background"
+                android:textSize="15dp" />
+
+            <RelativeLayout
+                android:id="@+id/name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="30dp">
+
+                <EditText
+                    android:id="@+id/regUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_toRightOf="@id/name"
+                    android:background="@color/EditText"
+                    android:hint="Full Name"
+                    android:padding="8dp" />
+
+                <ImageView
+                    android:id="@+id/name"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="8dp"
+                    android:src="@drawable/user"
+                    android:tint="@color/design_default_color_background" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/id1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="30dp">
+
+                <EditText
+                    android:id="@+id/regId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_toRightOf="@id/id"
+                    android:background="@color/EditText"
+                    android:hint="College Id Number"
+                    android:padding="8dp" />
+
+                <ImageView
+                    android:id="@+id/id"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="8dp"
+                    android:src="@drawable/user"
+                    android:tint="@color/design_default_color_background" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dept1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="30dp">
+
+                <EditText
+                    android:id="@+id/regYr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_toRightOf="@id/dept"
+                    android:background="@color/EditText"
+                    android:hint="Dept/Year"
+                    android:padding="8dp" />
+
+                <ImageView
+                    android:id="@+id/dept"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="8dp"
+                    android:src="@drawable/user"
+                    android:tint="@color/design_default_color_background" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/phone1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dept1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="30dp">
+
+                <EditText
+                    android:id="@+id/regNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_toRightOf="@id/num"
+                    android:background="@color/EditText"
+                    android:hint="Mobile No."
+                    android:padding="8dp" />
+
+                <ImageView
+                    android:id="@+id/num"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="8dp"
+                    android:src="@drawable/phone"
+                    android:tint="@color/design_default_color_background" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/password1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phone1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="30dp">
+
+                <EditText
+                    android:id="@+id/regPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_toRightOf="@id/password"
+                    android:background="@color/EditText"
+                    android:hint="Password"
+                    android:padding="8dp" />
+
+                <ImageView
+                    android:id="@+id/password"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="8dp"
+                    android:src="@drawable/password"
+                    android:tint="@color/design_default_color_background" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relative1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/avatar"
+                    android:tint="@color/design_default_color_background" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toRightOf="@id/avatar"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="REGISTER"
+                    android:textColor="@color/design_default_color_background"
+                    android:textSize="25dp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>
