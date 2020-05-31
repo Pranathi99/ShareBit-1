@@ -22,16 +22,24 @@ public class Register extends AppCompatActivity {
     protected void onCreate(Bundle SavedInstanceState) {
         super.onCreate(SavedInstanceState);
         setContentView(R.layout.register);
-        fullname=(EditText) fullname.findViewById(R.id.regUserName);
-        password=(EditText) password.findViewById(R.id.regPass);
-        clgId=(EditText) clgId.findViewById(R.id.regId);
-        phone=(EditText) phone.findViewById(R.id.regNo);
-        year=(EditText) year.findViewById(R.id.regYr);
-        create=(Button) create.findViewById(R.id.create);
+        fullname=(EditText) findViewById(R.id.regUserName);
+        password=(EditText) findViewById(R.id.regPass);
+        clgId=(EditText) findViewById(R.id.regId);
+        phone=(EditText) findViewById(R.id.regNo);
+        year=(EditText) findViewById(R.id.regYr);
+        create=(Button) findViewById(R.id.create);
 
         mAuth=FirebaseAuth.getInstance();
-
-        create.setOnClickListener((View.OnClickListener) this);
+        create.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()) {
+                    case R.id.create:
+                        registerUser();
+                        break;
+                }
+            }
+        });
     }
 
     @Override
@@ -87,7 +95,7 @@ public class Register extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()) {
                     User user=new User(name,pass,yr,mobileno,fname);
-                    FirebaseDatabase.getInstance().getReference("$Users")
+                    FirebaseDatabase.getInstance().getReference("Users")
                             .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(user)
                             .addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override

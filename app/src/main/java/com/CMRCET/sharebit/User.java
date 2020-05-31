@@ -1,7 +1,7 @@
 package com.CMRCET.sharebit;
 
 public class User {
-protected String username,password,year,mobileno,fullname;
+public String username,password,year,mobileno,fullname;
 
     public User() {
 

@@ -3,7 +3,6 @@
     <color name="colorPrimary">#FFC107</color>
     <color name="colorPrimaryDark">#FFA000</color>
     <color name="colorAccent">#03DAC5</color>
-<<<<<<< HEAD
     <color name="TwitterBlue">#00acee</color>
     <color name="backgroundcolor">#fcfcfc</color>
     <color name="lightgray">#ededed</color>
@@ -13,15 +12,8 @@
     <color name="darkblue">#23283a</color>
     <color name="testcolorblue">#152b38</color>
     <color name="pink">#fe104d</color>
-
-    <color name="black_overlay">#66000000</color>
-</resources>
-||||||| f6f4f79
-</resources>
-=======
-    <color name="TwitterBlue">#00acee</color>
-
     <color name="EditText">#DADADA</color>
     <color name="textColor">#6e6e6e</color>
+    <color name="black_overlay">#66000000</color>
 </resources>
->>>>>>> c5f7d85e5ae475478a7a3807d3222128b7302bf2
+
