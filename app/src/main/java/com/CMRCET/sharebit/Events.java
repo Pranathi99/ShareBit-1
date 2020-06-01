@@ -14,6 +14,7 @@ public class Events extends AppCompatActivity implements View.OnClickListener{
     private CardArrayAdapter cardArrayAdapter;
     private ListView listView;
     private FloatingActionButton newEvent;
+    int i;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,9 +24,9 @@ public class Events extends AppCompatActivity implements View.OnClickListener{
         listView.addFooterView(new View(this));
         newEvent=(FloatingActionButton) findViewById(R.id.button);
         cardArrayAdapter=new CardArrayAdapter(getApplicationContext(),R.layout.list_item_card);
-        for(int i=0;i<10;i++)
+        for(i=1;i<=10;i++)
         {
-            Cards card=new Cards("Event "+(i+1),"23/01/2000","QWWFE");
+            Cards card=new Cards("Event "+(i),"23/01/2000","QWWFE");
             cardArrayAdapter.add(card);
         }
         listView.setAdapter(cardArrayAdapter);
@@ -34,7 +35,8 @@ public class Events extends AppCompatActivity implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
-        Intent i=new Intent(this,NewEvent.class);
-        startActivity(i);
+        Cards card=new Cards("Event "+(i++),"23/01/2000","QWWFE");
+        cardArrayAdapter.add(card);
+        listView.setAdapter(cardArrayAdapter);
     }
 }

@@ -28,7 +28,7 @@
             android:layout_below="@+id/rel"
             android:layout_margin="20dp"
             android:padding="10dp"
-            android:text="LOGIN IN"
+            android:text="LOGIN"
             android:textSize="15dp" />
 
         <RelativeLayout
