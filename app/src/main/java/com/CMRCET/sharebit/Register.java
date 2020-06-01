@@ -89,8 +89,8 @@ public class Register extends AppCompatActivity {
             password.requestFocus();
             return;
         }
-
-        mAuth.createUserWithEmailAndPassword(name,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        String email=name+"@cmrcet.org";
+        mAuth.createUserWithEmailAndPassword(email,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()) {
