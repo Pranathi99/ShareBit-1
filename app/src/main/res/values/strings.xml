@@ -16,4 +16,5 @@
     <string name="eventTitle">Event Title</string>
     <string name="eventDetails">Event Details</string>
     <string name="eventDate">Event Date</string>
+    <string name="create">Create Event</string>
 </resources>

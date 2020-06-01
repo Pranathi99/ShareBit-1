@@ -35,5 +35,11 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:hint="@string/eventDate" />
+
+        <Button
+            android:id="@+id/create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create" />
     </LinearLayout>
 </RelativeLayout>

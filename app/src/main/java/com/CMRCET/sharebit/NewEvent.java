@@ -1,6 +1,7 @@
 package com.CMRCET.sharebit;
 
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +10,10 @@ public class NewEvent extends AppCompatActivity {
     EditText title;
     EditText details;
     EditText date;
+    String eventTitle;
+    String eventDetails;
+    String eventDate;
+    Button create;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,9 +21,11 @@ public class NewEvent extends AppCompatActivity {
         title=(EditText) findViewById(R.id.eventTitle);
         details=(EditText) findViewById(R.id.eventDetails);
         date=(EditText) findViewById(R.id.eventDate);
-        String eventTitle=title.getText().toString();
-        String eventDetails=details.getText().toString();
-        String eventDate=date.getText().toString();
+        create= (Button)findViewById(R.id.create);
+        eventTitle=title.getText().toString();
+        eventDetails=details.getText().toString();
+        eventDate=date.getText().toString();
+
     }
 }
 
