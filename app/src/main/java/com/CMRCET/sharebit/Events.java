@@ -8,18 +8,20 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
 
-public class Events extends AppCompatActivity {
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+public class Events extends AppCompatActivity implements View.OnClickListener{
     private CardArrayAdapter cardArrayAdapter;
     private ListView listView;
-    private Button newEvent;
+    private FloatingActionButton newEvent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.list_view);
+        setContentView(R.layout.activity_events);
         listView=(ListView)findViewById(R.id.card_listView);
         listView.addHeaderView(new View(this));
         listView.addFooterView(new View(this));
-        newEvent=(Button)findViewById(R.id.button);
+        newEvent=(FloatingActionButton) findViewById(R.id.button);
         cardArrayAdapter=new CardArrayAdapter(getApplicationContext(),R.layout.list_item_card);
         for(int i=0;i<10;i++)
         {
@@ -27,12 +29,12 @@ public class Events extends AppCompatActivity {
             cardArrayAdapter.add(card);
         }
         listView.setAdapter(cardArrayAdapter);
-        newEvent.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent in=new Intent(getApplicationContext(),NewEvent.class);
-                startActivity(in);
-            }
-        });
+        newEvent.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent i=new Intent(this,NewEvent.class);
+        startActivity(i);
     }
 }
