@@ -11,4 +11,9 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
     <string name="registration_success">1</string>
+
+    <string name="new_event">Add New Event</string>
+    <string name="eventTitle">Event Title</string>
+    <string name="eventDetails">Event Details</string>
+    <string name="eventDate">Event Date</string>
 </resources>
