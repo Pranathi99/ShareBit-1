@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/LoginTheme">
-        <activity android:name=".Cleaning"></activity>
+        <activity android:name=".Snacks"></activity>
+        <activity android:name=".Lunch" />
+        <activity android:name=".Breakfast" />
+        <activity android:name=".Cleaning" />
         <activity android:name=".Events" />
         <activity android:name=".LostAndFound" />
         <activity android:name=".Canteen" />

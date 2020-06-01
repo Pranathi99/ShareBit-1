@@ -44,7 +44,6 @@ public class HomePage extends AppCompatActivity implements View.OnClickListener 
 
     @Override
     public void onClick(View v) {
-
         switch (v.getId()) {
             case R.id.canteenId:
                 i = new Intent(this, Canteen.class);
@@ -63,24 +62,16 @@ public class HomePage extends AppCompatActivity implements View.OnClickListener 
                 startActivity(i);
                 break;
             case R.id.registerId:
-                Query query = ref.child("Users").child("username").equalTo(FirebaseAuth.getInstance().getCurrentUser().getUid());
-                query.addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
-                        if (dataSnapshot.exists()) {
+                String userid=FirebaseAuth.getInstance().getCurrentUser().getUid().toString().trim();
+                if(userid.equals("LNc6VVGcZGbPb3uNTfp2t6VquJv1")){
+
                             i = new Intent(HomePage.this, Register.class);
                             startActivity(i);
-                        }
-                        else {
-                            Toast.makeText(HomePage.this, "Access denied!", Toast.LENGTH_SHORT).show();
-                        }
-                    }
+                }
+                else{
+                    Toast.makeText(this,"Access denied!",Toast.LENGTH_SHORT).show();
+                }
 
-                    @Override
-                    public void onCancelled(DatabaseError databaseError) {
-
-                    }
-                });
                 break;
             default:
                 throw new IllegalStateException("Unexpected value: " + v.getId());
