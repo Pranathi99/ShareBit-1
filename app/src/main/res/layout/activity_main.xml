@@ -106,6 +106,9 @@
                 android:layout_alignParentRight="true"
                 android:padding="3dp"
                 android:text="Forgot Password?"
+                android:backgroundTint="#FFF"
+                android:stateListAnimator="@null"
+                android:textColor="#424242"
                 android:textAllCaps="false" />
 
 
