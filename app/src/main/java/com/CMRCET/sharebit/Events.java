@@ -34,12 +34,10 @@ public class Events extends AppCompatActivity{
         listView.addFooterView(new View(this));
         newEvent=(FloatingActionButton) findViewById(R.id.button);
         cardArrayAdapter=new CardArrayAdapter(getApplicationContext(),R.layout.list_item_card);
-
         Cards c1=new Cards("Event 1","19/01","Event");
         eventList.add(c1);
         Cards c2=new Cards("Event 2","15/07","Event");
         eventList.add(c2);
-
         if(eventList.isEmpty())
         {
             text=(TextView)findViewById(R.id.textView);
