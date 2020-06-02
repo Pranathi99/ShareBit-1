@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.telecom.Call;
+import android.util.EventLog;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -35,11 +36,18 @@ public class CreateEvent extends AppCompatActivity {
         final String ETitle=title.getText().toString();
         final String EDetails=details.getText().toString();
         final String EDate=date.getText().toString();
+        databaseReference.child("Events").setValue("Title");
+        databaseReference.child("Events").setValue("Details");
+        databaseReference.child("Events").setValue("Date");
         create.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EventList eventList=new EventList(ETitle,EDetails,EDate);
-                databaseReference.child("Events").setValue(eventList);
+//                EventList eventList=new EventList(ETitle,EDetails,EDate);
+//                databaseReference.child("Events").push().setValue(eventList);
+
+                databaseReference.child("Events").child("Title").setValue(ETitle);
+                databaseReference.child("Events").child("Details").setValue(EDetails);
+                databaseReference.child("Events").child("Date").setValue(EDate);
                 Toast.makeText(getApplicationContext(),"Event Added",Toast.LENGTH_LONG);
 //                Intent i=new Intent(getApplicationContext(),Events.class);
 //                startActivity(i);
