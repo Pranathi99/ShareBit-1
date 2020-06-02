@@ -33,7 +33,7 @@
                         android:id="@+id/fooditemname"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif-medium"
+                        android:fontFamily="@font/roboto_bold"
                         android:textColor="#fdb501"
                         android:textSize="20dp" />
 
@@ -48,10 +48,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:fontFamily="sans-serif-medium"
+                            android:fontFamily="@font/roboto_bold"
                             android:text="Description"
                             android:textColor="#01579B"
-                            android:textSize="15dp"
+                            android:textSize="10dp"
                             android:paddingRight="5dp"/>
 
                         <TextView
@@ -74,10 +74,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:fontFamily="sans-serif-medium"
+                            android:fontFamily="@font/roboto_bold"
                             android:text="Price"
                             android:textColor="#01579B"
-                            android:textSize="15dp"
+                            android:textSize="10dp"
                             android:paddingRight="5dp"/>
 
                         <TextView
@@ -86,7 +86,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textColor="#000"
-                            android:textSize="15dp" />
+                            android:textSize="10dp" />
 
                     </LinearLayout>
 
@@ -100,10 +100,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:fontFamily="sans-serif-medium"
+                            android:fontFamily="@font/roboto_bold"
                             android:text="Quantity"
                             android:textColor="#01579B"
-                            android:textSize="15dp"
+                            android:textSize="10dp"
                             android:paddingRight="5dp"/>
 
                         <ImageView
@@ -111,17 +111,17 @@
                             android:layout_width="20dp"
                             android:layout_height="20dp"
                             android:cropToPadding="true"
-                            android:padding="0dp"
+                            android:padding="5dp"
                             android:src="@drawable/plus" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:fontFamily="sans-serif-medium"
+                            android:fontFamily="@font/roboto_bold"
                             android:text="0"
                             android:textColor="#000"
-                            android:textSize="15dp"
+                            android:textSize="10dp"
                             android:padding="3dp"/>
 
                         <ImageView
@@ -129,7 +129,7 @@
                             android:layout_width="20dp"
                             android:layout_height="20dp"
                             android:cropToPadding="true"
-                            android:padding="0dp"
+                            android:padding="5dp"
                             android:src="@drawable/minus"/>
                     </LinearLayout>
 
