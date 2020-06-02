@@ -3,15 +3,18 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/lightgray"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CreateEvent">
 
 
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
+        android:layout_marginStart="30dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp">
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="30dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -19,16 +22,16 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
-                android:layout_margin="10dp"
+                android:id="@+id/eventTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:ems="10"
                 android:hint="@string/eventTitle"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editTextTextMultiLine"
+                android:id="@+id/eventDetails"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -39,19 +42,19 @@
                 android:inputType="textMultiLine" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName2"
-                android:layout_margin="10dp"
+                android:id="@+id/eventDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:ems="10"
                 android:hint="@string/eventDate"
                 android:inputType="textPersonName" />
 
             <Button
-                android:id="@+id/button2"
-                android:layout_margin="10dp"
+                android:id="@+id/create"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:text="@string/create" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
