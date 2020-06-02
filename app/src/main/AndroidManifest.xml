@@ -10,11 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/LoginTheme">
         <activity android:name=".CreateEvent"/>
+<<<<<<< HEAD
         <activity android:name=".Snacks"></activity>
+=======
+        <activity android:name=".Snacks" />
+>>>>>>> fa9c010d6406b770bc7fd051da754b82da016dc5
         <activity android:name=".Lunch" />
         <activity android:name=".Breakfast" />
         <activity android:name=".Cleaning" />
-        <activity android:name=".Events"/>
         <activity android:name=".LostAndFound" />
         <activity android:name=".Canteen" />
         <activity
