@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/LoginTheme">
-        <activity android:name=".CreateEvent"></activity>
+        <activity android:name=".CreateEvent"/>
         <activity android:name=".Snacks" />
         <activity android:name=".Lunch" />
         <activity android:name=".Breakfast" />
