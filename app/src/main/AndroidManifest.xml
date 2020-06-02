@@ -9,12 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/LoginTheme">
-        <activity android:name=".CreateEvent"/>
-        <activity android:name=".Events"/>
+        <activity android:name=".MainActivity4"></activity>
+        <activity android:name=".CreateEvent" />
         <activity android:name=".Snacks" />
         <activity android:name=".Lunch" />
         <activity android:name=".Breakfast" />
-        <activity android:name=".Cleaning" />
+        <activity android:name=".Cleaning">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Events" />
         <activity android:name=".LostAndFound" />
         <activity android:name=".Canteen" />
         <activity

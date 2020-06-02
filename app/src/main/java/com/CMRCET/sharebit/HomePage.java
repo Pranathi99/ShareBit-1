@@ -55,16 +55,8 @@ public class HomePage extends AppCompatActivity implements View.OnClickListener 
                 startActivity(i);
                 break;
             case R.id.registerId:
-                String userid=FirebaseAuth.getInstance().getCurrentUser().getUid().toString().trim();
-                if(userid.equals("LNc6VVGcZGbPb3uNTfp2t6VquJv1")){
-
-                            i = new Intent(HomePage.this, Register.class);
-                            startActivity(i);
-                }
-                else{
-                    Toast.makeText(this,"Access denied!",Toast.LENGTH_SHORT).show();
-                }
-
+                i = new Intent(HomePage.this, Register.class);
+                startActivity(i);
                 break;
             default:
                 throw new IllegalStateException("Unexpected value: " + v.getId());
