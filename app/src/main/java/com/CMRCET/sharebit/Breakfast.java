@@ -9,7 +9,6 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-
 public class Breakfast extends AppCompatActivity {
 
     @Override

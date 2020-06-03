@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -48,6 +49,7 @@ public class Cleaning extends AppCompatActivity {
                 UserHelper helper = new UserHelper(depart,rom,pbm);
 
                 reff.child(pbm).setValue(helper);
+                Toast.makeText(Cleaning.this,"Complaint submitted",Toast.LENGTH_SHORT).show();
 
             }
         });
